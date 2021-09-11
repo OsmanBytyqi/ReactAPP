@@ -1,20 +1,16 @@
 import './App.css';
+import Navbar from './Navbar';
+import Home from './home';
+
 
 function App() {
 
-  const title="My component";
-  //we use dynamic values in template just for string and number, for object and boolean values we cant
-
-  const number=10;
   return (
     <div className="App">
+      <Navbar></Navbar>
       <div className="content">
-        <h1>{title}</h1>
-        <p>{number}</p>
-        <p>{'hello there '}</p>
+        <Home></Home>
       </div>
-
-     
     </div>
   );
 }
