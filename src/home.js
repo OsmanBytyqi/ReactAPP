@@ -17,14 +17,18 @@ const Home = () => {
 
     };
 
+    const[name ,setName]=useState('genti');
+
    useEffect(()=>{
      console.log("use efect ran");
-   })
+   },[name])
   
     return (
       <div className="home">
 
         <BlogList blogs={blogs} title="My all blogs" handledelete={handledelete}></BlogList>
+        <p>{name}</p>
+        <button onClick={()=>{setName("mani")}}> chnage name</button>
      
       </div>
     );
