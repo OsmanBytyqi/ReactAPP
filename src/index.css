@@ -47,3 +47,11 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.blog-details div{
+  margin-top: 20px;
+}
+.blog-details h2{
+  font-size: 20px;
+  color: #f1356d;
+}
